@@ -34,6 +34,7 @@ module Puma
     DATE = "Date".freeze
 
     SCRIPT_NAME = "SCRIPT_NAME".freeze
+    RAILS_RELATIVE_URL_ROOT = "RAILS_RELATIVE_URL_ROOT".freeze
 
     # The original URI requested by the client.
     REQUEST_URI= 'REQUEST_URI'.freeze
