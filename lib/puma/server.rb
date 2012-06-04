@@ -370,6 +370,7 @@ module Puma
       end
 
       env[PATH_INFO] = env[REQUEST_PATH]
+      env[REQUEST_URI] = env[SCRIPT_NAME] + env[REQUEST_URI]
 
       # From http://www.ietf.org/rfc/rfc3875 :
       # "Script authors should be aware that the REMOTE_ADDR and
